@@ -1,109 +1,59 @@
-<!---section 2-->
+<html lang="en">
 
-<div class="section2 wrapper">
-    <div class="hero">
-
-        <div class="match-part">
-            <div>
-                <h2>match schedule</h2>
-            </div>
-            <div class="d-flex">
-                <ion-icon name="print"></ion-icon>
-                <div class="line-under-container">
-                    <a href="">more</a> <span class="line-under"></span>
-
-                </div>
-            </div>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<svg class=" svg-def ">
+        <defs>
+      
+          <!-- a glow that takes on the stroke color of the object it's applied to -->
+          <filter id="strokeGlow " y="-10 " x="-10 " width="250 " height="150 ">
+      
+            <feOffset in="StrokePaint " dx="0 " dy="0 " result="centeredOffset "></feOffset>
+      
+            <feGaussianBlur in="centeredOffset " stdDeviation="2 " result="blur1 "></feGaussianBlur>
+            <feGaussianBlur in="centeredOffset " stdDeviation="5 " result="blur2 "></feGaussianBlur>
+            <feGaussianBlur in="centeredOffset " stdDeviation="15 " result="blur3 "></feGaussianBlur>
+      
+            <feMerge>
+              <!-- this contains the offset blurred image -->
+              <feMergeNode in="blur1 "></feMergeNode>
+              <feMergeNode in="blur2 "></feMergeNode>
+              <feMergeNode in="blur3 "></feMergeNode>
+      
+              <!-- this contains the element that the filter is applied to -->
+              <feMergeNode in="SourceGraphic "></feMergeNode>
+            </feMerge>
+          </filter>
+      
+        </defs>
+      </svg>
+      
+      
+      <div class="main-view-container ">
+      
+        <div class="loader-container ">
+      
+          <svg id="loader " xmlns="http://www.w3.org/2000/svg " width="250px " height="200px " viewBox="0 0 250 200 ">
+            <svg style="overflow: visible ">
+            <path id="jump " fill="none " stroke="#33FFFF " stroke-width="10 " stroke-linecap="round " stroke-miterlimit="10 " d="M55.5 98.5c0-35.3 31.3-64 70-64s70 28.7 70 64 "></path>
+            </svg>
+      
+            <g fill="none " stroke-width="1 " stroke="#33FFFF " stroke-linecap="round " stroke-miterlimit="10 ">
+              <ellipse id="circleL " cx="55.2 " cy="102.5 " rx="21.7 " ry="5.5 "></ellipse>
+              <ellipse id="circleR " cx="195.2 " cy="103.5 " rx="21.7 " ry="5.5 "></ellipse>
+            </g>
+          </svg>
+      
+      
         </div>
-    </div>
-    <% for( let index=0 ; index < 3; index++ ) { %>
-        <div class="match-club">
+      
+      </div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-            <div class="club">
-                <div>
-                    <h5 class="match.match_club_title">
-                        <%=match.match_club_title[index]%>
-                    </h5>
-                </div>
-                <div class="match-container">
-                    <div class='match-result'>
-                        <div class="group-info">
-                            <div>
-                                <ion-icon name="<%=match. group_one_icon[index]%>" class='<%=match.group_one_icon[index]%>'></ion-icon>
+<body>
 
-                                <%=match.svg_group1[index]%>
+</body>
 
-                            </div>
-                            <p>
-                                <%=match.group_one[index]%>
-                            </p>
-                        </div>
-                        <div>
-                            <%=match.num1[index]%>
-                        </div>
-                    </div>
-                    <div>
-                        <%=match.special[index]%>
-                    </div>
-                    <div class=' match-result '>
-                        <div>
-                            <%=match.num2[index]%>
-                        </div>
-                        <div class="group-info" style="text-transform: lowercase;">
-                            <ion-icon name="<%=match. group_two_icon[index]%>" class='<%=match.group_two_icon[index]%>'></ion-icon>
-                            <%=match.svg_group2[index]%>
-                                <p>
-                                    <%=match.group_two[index]%>
-                                </p>
-
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="zab-title">
-                        <%=match.match_ht[index]%>
-
-                    </h4>
-                    <p class="date">
-                        <%=match.match_tail[index]%>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <% } %>
-
-
-            <div class='cards-container '>
-                <div class='card-container '>
-                    <div>
-                        <img src="img/1646849726470.jpeg" alt=" ">
-                    </div>
-                    <div>
-                        <h5>latest new</h5>
-                        <div>
-                            <h2>roman <br> gergel scorer 4 gols</h2>
-                        </div>
-                        <div class="more">
-                            <ion-icon name="camera-outline"></ion-icon>
-                            <a href=" ">more</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class='card-container '>
-                    <div>
-                        <img src="img/1646849726470.jpeg" alt=" ">
-                    </div>
-                    <div>
-                        <h5> teams</h5>
-                        <div>
-                            <h2>line-up for <br> the upcoming match</h2>
-                        </div>
-                        <div class='more '>
-                            <ion-icon name="reader-outline"></ion-icon> <a href=" ">more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</div>
+</html>
