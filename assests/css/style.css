@@ -606,7 +606,6 @@
         }
         main .svg-container {
             display: grid;
-            background-color: aliceblue;
         }
         .index {
             display: block;
